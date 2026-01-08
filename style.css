@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2×2 layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #4f46e5;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* single column */
+    }
+}
